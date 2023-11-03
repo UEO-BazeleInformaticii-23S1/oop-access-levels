@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-
 namespace OopAccessLevels.Library
 {
     public class CarDealer
@@ -11,8 +9,12 @@ namespace OopAccessLevels.Library
         void DealerPrintInventory()
         {
             Car car = new Car();
-            Console.WriteLine(car.manufacturer);
+            // Car private field not accessible in another class
+            // from within the same project
+            // Console.WriteLine(car.manufacturer);
 
+
+            Console.WriteLine(car.model);
         }
     }
 }

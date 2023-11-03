@@ -7,7 +7,12 @@ namespace OopAccessLevels.App
         static void Main(string[] args)
         {
             Car car = new Car();
-            Console.WriteLine(car.manufacturer);
+
+            // Car private field not accessible in another class
+            // from another project
+            // Console.WriteLine(car.manufacturer);
+
+            Console.WriteLine(car.model);
         }
     }
 }
