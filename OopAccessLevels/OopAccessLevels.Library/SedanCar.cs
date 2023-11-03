@@ -11,6 +11,10 @@
             // Car protected field accesssible in child class
             // from within the same project
             Console.WriteLine(model);
+
+            // Car private-protected field accesssible in child class
+            // from within the same project
+            Console.WriteLine(modelVariant);
         }
     }
 }

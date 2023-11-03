@@ -12,7 +12,11 @@ namespace OopAccessLevels.App
             // from another project
             // Console.WriteLine(car.manufacturer);
 
-            Console.WriteLine(car.model);
+            // Car protected field not accessible in another class
+            // from another project
+            // Console.WriteLine(car.model);
+
+            Console.WriteLine(car.modelVariant);
         }
     }
 }

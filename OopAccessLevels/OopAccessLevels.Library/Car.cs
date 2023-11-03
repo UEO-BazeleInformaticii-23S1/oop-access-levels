@@ -4,6 +4,7 @@
     {
         private string manufacturer = "Renault";
         protected string model = "Clio";
+        private protected string modelVariant = "BaseModel";
 
 
         void CarPrintManufacturer()
@@ -12,7 +13,10 @@
             Console.WriteLine(manufacturer);
 
             // protected field accessible from within the class
-            Console.WriteLine(model);            
+            Console.WriteLine(model);
+
+            // private-protected field accessible from within the class
+            Console.WriteLine(modelVariant);
         }
     }
 }

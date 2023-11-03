@@ -13,6 +13,9 @@ namespace OopAccessLevels.App
             // Car protected field accesssible in child class
             // from another project
             Console.WriteLine(model);
+
+            Console.WriteLine(modelVariant);
+
         }
     }
 }
