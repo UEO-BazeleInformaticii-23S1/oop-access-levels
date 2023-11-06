@@ -4,6 +4,8 @@ namespace OopAccessLevels.App
 {
     public class SuvCar : Car
     {
+        private Wheel aWheel = new Wheel();
+
         void SuvPrintManufacturer()
         {
             // Car private field not accessible in child class 
@@ -19,6 +21,11 @@ namespace OopAccessLevels.App
             // Console.WriteLine(modelVariant);
 
             Console.WriteLine(year);
+        }
+
+        private class SuvWheel : Wheel
+        {
+
         }
     }
 }

@@ -4,7 +4,7 @@ namespace OopAccessLevels.App
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Car car = new Car();
 
