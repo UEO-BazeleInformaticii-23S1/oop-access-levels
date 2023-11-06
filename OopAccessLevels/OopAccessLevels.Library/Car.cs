@@ -5,7 +5,7 @@
         private string manufacturer = "Renault";
         protected string model = "Clio";
         private protected string modelVariant = "BaseModel";
-
+        internal int year = 2023;
 
         void CarPrintManufacturer()
         {
@@ -17,6 +17,9 @@
 
             // private-protected field accessible from within the class
             Console.WriteLine(modelVariant);
+
+            // internal field accessible from within the class
+            Console.WriteLine(year);
         }
     }
 }

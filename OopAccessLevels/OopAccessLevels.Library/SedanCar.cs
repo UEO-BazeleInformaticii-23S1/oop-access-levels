@@ -15,6 +15,10 @@
             // Car private-protected field accesssible in child class
             // from within the same project
             Console.WriteLine(modelVariant);
+
+            // Car internal field accessible in child class
+            // from within the same project
+            Console.WriteLine(year);
         }
     }
 }

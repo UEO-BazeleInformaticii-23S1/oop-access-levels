@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 namespace OopAccessLevels.Library
 {
     public class CarDealer
@@ -17,7 +14,11 @@ namespace OopAccessLevels.Library
             // from within the same project
             // Console.WriteLine(car.model);
 
-            Console.WriteLine(car.modelVariant);
+            // Car private-protected field not accessible in another class
+            // from within the same project
+            // Console.WriteLine(car.modelVariant);
+
+            Console.WriteLine(car.year);
         }
     }
 }
